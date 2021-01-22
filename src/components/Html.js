@@ -45,6 +45,7 @@ export default function Html({
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js" />
         <script
           dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
         />

@@ -29,3 +29,61 @@
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
 }
+
+:global .container {
+  text-align: center;
+}
+
+:global .table {
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+:global .table .row-content.row-first .cell-content {
+  border-top: 1px solid red;
+}
+
+:global .table .row-content.row-last .cell-content {
+  border-bottom: 1px solid red;
+}
+
+:global .table .cell-content {
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+:global .table .cell-content.cell-first {
+  border-left: 1px solid red;
+}
+
+:global .table .cell-content.cell-last {
+  border-right: 1px solid red;
+}
+
+:global .row {
+  display: table-row;
+}
+
+:global .cell {
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+:global .cell-clue {
+  cursor: pointer;
+  transition: all 0.3s;
+  background: #5af2;
+}
+
+:global .cell-clue.cell-clue-hover {
+  background: #5af;
+}
+
+:global .pvs {
+  color: #aaa;
+  font-size: 10px;
+}
